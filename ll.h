@@ -6,7 +6,6 @@
 
 	3/19/15
 	Shin Nagai
-	Program 2
 	linked list
 
 
