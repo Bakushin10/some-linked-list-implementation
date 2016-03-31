@@ -1,2 +1,2 @@
 # some-linked-list-implementation
-just 
+just some implementation of linked list 
