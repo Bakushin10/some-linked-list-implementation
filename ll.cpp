@@ -257,7 +257,7 @@ Node* Node::insert_best(Node *list, int data, char* name,int start) {
 
     while(match) {
 
-        ///you cloud not find any space to put a node in
+        ///you did not find any space to put a node in
         if(list->next == NULL) {
 
             list->next = pNew;
