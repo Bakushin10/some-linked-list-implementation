@@ -309,22 +309,24 @@ Node* Node::kill(Node *front, char* name) {
 }
 
 int Node::fragmentation(Node* list) {
-    int frag=0;
-
+    int flag=1;
+    
+    ///if list is empty
+    if(list == NULL)
+        return 0;
+        
     while(list != NULL) {
-        if(frag  == 0)
-            frag =1;
 
         ///if list->next exits, do the following
         if(list->next != NULL) {
             ///if there is more than one fragment
             if(list->end != list->next->start)
-                frag++;
+                flag++;
         }
 
         list=list->next;
     }
-    return frag;
+    return flag;
 }//end of fragmentation
 
 int Node::getData() {
