@@ -288,7 +288,6 @@ Node* Node::kill(Node *front, char* name) {
     if (temp != NULL) {
         // Take care of the case where first node needs to be deleted.
         if (strcmp(temp->name, name)==0) {
-
             del = temp -> next;
             delete (temp);
             return del;
