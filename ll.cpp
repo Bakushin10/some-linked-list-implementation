@@ -21,7 +21,7 @@ int linkedlist::getChoice() {
     int choice=0;
     bool valid = false;
 
-    while(valid == false) {
+    while(!valid) {
         std::cout<<"1. Add program"<<endl;
         std::cout<<"2. Kill program"<<endl;
         std::cout<<"3. Fragmentation"<<endl;
